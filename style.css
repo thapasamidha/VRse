@@ -1,106 +1,204 @@
 body{
-    font-family: 'Playfair Display', serif;
-}
-header{
-    text-align: center;
-    height: 60px;
-    position: sticky;
-    top: 2px;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    justify-content: space-evenly;
-    align-content: center;
-    background-color: black;
-}
-a{
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Playfair Display', serif;
-    color: white;
-}
-a:hover{
-    transform: scale(1.1);
-    color: rgba(198, 189, 189, 0.514);
-    /* background-color: rgba(245, 245, 245, 0.557); */
-}
-
-.gutters{
-    height: 700px;
-    width: 99%;
-    background-image: url(https://cdna.artstation.com/p/assets/images/images/066/851/922/large/hemanth-vignesh-shot-1.jpg?1693932413);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    background-image: url(https://images.pexels.com/photos/4709521/pexels-photo-4709521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
-
+    background-repeat: repeat;
 }
-#skills{
-    margin: 10px;
+
+#poster{
+    position: relative;
+}
+.divider{
+    margin-top: 20px;
+}
+#intro{
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(80, 30, 126, 0.87);
+}
+
+#navbar{
+    height: 60px;
+    display: grid;
+    grid-template-columns: 85% 10% 5%;
+}
+.iconImg{
+    width:45px;
+    height: 45px;
+}
+#demoLink{
     border: 0px solid;
-    width: 700px;
-    height: 200px;
+    position: absolute;
+    padding-top:12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+#headlines{
+    font-size: xx-large;
+    text-align: center;
+}
+b{
+    color: rgb(255, 122, 166);
+}
+.details{
+    text-align: center;
+    /* border: 1px solid; */
+}
+#numbers{
+    margin-top: 20px;
     display: flex;
-    /* position: absolute; */
-    margin-left: 30%;
-    justify-content: center;
+    align-items: center;
+}
+.count{
+    border: 1px solid;
+    width: 33.3%;
+    /* margin: 5% 8.5%; */
+    text-align: center;
+    /* display: inline-block;/ */
+}
+.companyScroll{
+    align-items: center;
+}
+.companies{
+    margin: 15px;
+    width: 40px;
+    height: 40px;
 }
 
-.skillset{
-    width: 150px;
-    height: 150px;
-    border: 0px solid black;
-    margin: 20px;
-    padding: 20px;
-    
-    /* display: block; */
+h2{
+    font-size: x-large;
+    color: rgb(47, 9, 134);
 }
-.skillset:hover{
-    border-radius: 10px;
-    background-color: gray;
-    transform: scale(1.1);
+.searchbar{
+    display: flex;
 }
-.icons{
+.inputDesign{
+    margin-top: 2%;
+    align-items: center;
+    /* border: 1px solid; */
+}
+label{
+    margin: 4px;
+    display: block;
+}
+input{
+    border-radius:5px ;
+    box-shadow: 5px 5px 8px 5px  rgba(122, 75, 122, 0.767);
+    height: 50%;
+    width: 95%;
+}
+.search{
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    font-size: x-small;
+    background-color: rgb(149, 119, 221);
+}
+
+.search:hover{
+    font-size: small;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.searchDetails{
+    width:50%;
+}
+.figure{
+    width: 25%;
+}
+.cardImg{
+    width: 70%;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px black;
+}
+.desc{
+    margin-top: 10px;
+    width: 250px;
+}
+.figureTitle{
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: bold;
+
+}
+#techno{
+    margin-top: 8%;
+}
+.trainingLogo{
     width: 50px;
     height: 50px;
-    
 }
-h2,p{
-    font-size: 30px;
-    display: inline;
+#builderTraining{
+    margin: 0 5%;
+    /* border: 2px solid black; */
+    display: grid;
 }
-
-#portfolio{
-    background-color: palegreen;
-    height: 1600px;
-    font-size: 40px;
-    
-}
-h1{
-    font-size: 40px;
-    display: block;
-    text-align: center;
-    height: 30px;
-}
-.video{
-    width: 800px;
-    height: 500px;
-    margin: 0px 30%;
-}
-.work{
-    margin: 0px 20%;
-}
-.workvid{
-    margin: 0px 60px;
-    height: 300px;
-    width: 400px;
-    border: 0px solid;
-    padding: 20px;
-
-}
-.workimage{
-    width: 350px;
-    height: 350px;
-    border: 0px solid;
+#builderTraining div{
+    /* border: 2px solid black; */
+    border-radius: 5px;
     margin: 5px;
+    width: 95%;
+    color: white;
+}
+#builder{
+    background-color: violet;
+    display: inline-block;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#unity{
+    background-color: rgb(30, 24, 75);
+    display: inline-block;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#workshops{
+    background-color: darkorchid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end:3;
+}
 
+#test{
+    margin: 0 5%;
+    /* border: 2px solid black; */
+    display: grid;
+}
+#test div{
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    margin: 5px;
+    width: 95%;
+    border-radius: 5px;
+    color: white;
+}
+
+#alumni{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#demoBooking{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#visitBook{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:4;
 }
